@@ -4,7 +4,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+5
 function calculateDemeritPoints(speed) {
     const SpeedLimit = 70;
     const kmPerDemeritPoint = 5;
