@@ -14,12 +14,12 @@ function getBasicSalaryAndBenefits() {
 
       //output gross salary and net salary
       grossSalary = calculateGrossSalary(firstValue, secondValue);
-      console.log(GrossSalary: ${grossSalary});
+      console.log(`GrossSalary: ${grossSalary}`);
 netSalary = calculateNetSalary();
-console.log(NetSalary: ${netSalary});
-console.log(Payee: ${deductPayeeKRA() * grossSalary});
-console.log(NHIF: ${deductNHIF()});
-console.log(NSSF: ${deductNSSF()});
+console.log(`NetSalary: ${netSalary}`);
+console.log(`Payee: ${deductPayeeKRA() * grossSalary}`);
+console.log(`NHIF: ${deductNHIF()}`);
+console.log(`NSSF: ${deductNSSF()}`);
 
 
       // Closing the readline interface
@@ -154,12 +154,12 @@ function getBasicSalaryAndBenefits() {
 
       //output gross salary and net salary
       grossSalary = calculateGrossSalary(firstValue, secondValue);
-console.log(GrossSalary: ${grossSalary});
+console.log(`GrossSalary: ${grossSalary}`);
 netSalary = calculateNetSalary();
-console.log(NetSalary: ${netSalary});
-console.log(Payee: ${deductPayeeKRA() * grossSalary});
-console.log(NHIF: ${deductNHIF()});
-console.log(NSSF: ${deductNSSF()});
+console.log(`NetSalary: ${netSalary}`);
+console.log(`Payee: ${deductPayeeKRA() * grossSalary}`);
+console.log(`NHIF: ${deductNHIF()}`);
+console.log(`NSSF: ${deductNSSF()}`);
 
       // Closing the readline interface
       rl.close();
