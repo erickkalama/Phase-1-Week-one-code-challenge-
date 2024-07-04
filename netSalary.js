@@ -123,18 +123,18 @@ function deductNSSF() {
 
 //Calculate gross salary
 function calculateGrossSalary(basicSalary, benefits) {
-  grossSalary = Number(basicSalary) + Number(benefits);
+  let grossSalary = Number(basicSalary) + Number(benefits);
 
   return grossSalary;
 }
 
 //Calculate net salary
 function calculateNetSalary() {
-  totalDeductions =
+  let totalDeductions =
     Number(deductPayeeKRA() * grossSalary) +
     Number(deductNHIF()) +
     Number(deductNSSF());
-  netSalary = grossSalary - totalDeductions;
+  let netSalary = grossSalary - totalDeductions;
 
   return netSalary;
 }
