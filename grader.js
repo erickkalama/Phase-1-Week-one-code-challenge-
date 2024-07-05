@@ -1,9 +1,9 @@
 const readline = require('readline');
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
 function gradeGenerator(marks){
     if (marks < 0 || marks > 100) {
@@ -26,8 +26,8 @@ function gradeGenerator(marks){
         else 
             return"Your grade is E"
     }
-    }
-}
+    
+
 // The readline interface prompts the student/teacher to enter their marks through the command line
 const rl = readline.createInterface({
   input: process.stdin,
@@ -37,6 +37,10 @@ const rl = readline.createInterface({
 rl.question("Enter your marks: ", (input) => {
   const marks = parseFloat(input);
 
+
+  function studentGrader(marks) {
+    return gradeGenerator(marks);
+  }
   if (isNaN(marks)) {
     console.log("Invalid input. grade should be between 0-100"); //validates if an iput is a number
   } else {
